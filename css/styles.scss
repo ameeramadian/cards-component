@@ -1,0 +1,117 @@
+/* Global styles
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.btn {
+  background: none;
+}
+
+.count {
+  font-size: medium;
+  vertical-align: middle;
+  color: gray;
+}
+
+/* ------------------------------------Card Styles------------------------------------*/
+
+.card {
+  position: relative;
+  padding: 0;
+  margin: 8px 0px;
+  box-shadow: 0 0px 20px 0 transparent,
+    0 0px 20px 0 rgba($color: black, $alpha: 0.2);
+  border: none;
+}
+
+.card-badge {
+  background-color: midnightblue;
+  color: white;
+  width: 80px;
+  padding: 8px;
+  border-radius: 24px;
+}
+
+.card-date {
+  padding-bottom: 8px;
+  padding-top: 8px;
+  color: gray;
+}
+
+.card-title {
+  color: midnightblue;
+  font-weight: bold;
+}
+
+.card-text {
+  color: gray;
+}
+
+.card-author {
+  color: midnightblue;
+}
+
+.card-badge {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+}
+
+.card-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: white;
+  font-size: x-large;
+}
+
+/* ------------------------------------Ratings Styles------------------------------------*/
+.card-rating-group {
+  padding-bottom: 20px;
+}
+
+// hide radio inputs
+.rating__input {
+  display: none;
+}
+
+// set icon padding and size
+.rating__label {
+  cursor: pointer;
+  padding-right: 0.1em;
+  font-size: 2rem;
+}
+
+// set default star color
+.rating__icon--star {
+  color: orange;
+}
+
+// if any input is checked, make its following siblings grey
+.rating__input:checked ~ .rating__label .rating__icon--star {
+  color: #ddd;
+}
+
+// make all stars orange on rating group hover
+.rating-group:hover .rating__label .rating__icon--star {
+  color: orange;
+}
+
+// make hovered input's following siblings grey on hover
+.rating__input:hover ~ .rating__label .rating__icon--star {
+  color: #ddd;
+}
+
+/* ------------------------------------Interactions Styles------------------------------------*/
+
+.interaction-btn {
+  padding: 0px;
+  color: gray;
+}

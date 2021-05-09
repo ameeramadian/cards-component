@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Cards Component
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card col-6">
+                    <div>
+                        <img class="card-img-top" src="images/raandomimage1.png" alt="">
+                        <h6><span class="card-badge badge text-uppercase">Article</span></h6>
+                        <button type="button" class="card-button btn fa fa-ellipsis-v" ></button>
+                    </div>
+                    <div class="card-body">
+                            <div class="rating-group">
+                                <label aria-label="1 star" class="rating__label" for="rating1"><i class=" rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating1" value="1" type="radio">
+                                <label aria-label="2 stars" class="rating__label" for="rating2"><i class="rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating2" value="2" type="radio">
+                                <label aria-label="3 stars" class="rating__label" for="rating3"><i class="rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating3" value="3" type="radio">
+                                <label aria-label="4 stars" class="rating__label" for="rating4"><i class="rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating4" value="4" type="radio">
+                                <label aria-label="5 stars" class="rating__label" for="rating5"><i class="rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating5" value="5" type="radio">
+                                <span class="ratings-count count">235235</span>
+                        </div>
+                        <h6 class="card-date card-subtitle mb-2">3/24/2021</h6>
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-author"> <span>by</span> John Something</p>
+                    </div> <!-- card body div-->
+                    <div class="card-footer bg-transparent">
+                        <div class="card-interactions-group btn-group-lg" role="group">
+                            <button type="button" class="like-button interaction-btn btn fa fa-heart p-0"></button>
+                            <span class="likes-count count pr-4">232</span>
+                            <button type="button" class="comment-button interaction-btn btn fa fa-comment p-0"></button>
+                            <span class="comments-count count pr-4">4534</span>
+                            <button type="button" class="share--button interaction-btn btn fa fa-share p-0"></button>
+                          </div>
+                    </div> <!-- card footer div-->
+                </div> <!-- card div-->
+            </div> <!-- row div-->
+        </div>   <!-- container div-->
+    </body>
+</html>
