@@ -17,12 +17,21 @@ html {
   color: gray; }
 
 /* ------------------------------------Card Styles------------------------------------*/
+.card-deck {
+  background-color: #f4f4f4; }
+
 .card {
   position: relative;
   padding: 0;
   margin: 8px 0px;
+  margin-bottom: 30px;
   box-shadow: 0 0px 20px 0 transparent, 0 0px 20px 0 rgba(0, 0, 0, 0.2);
-  border: none; }
+  border: none;
+  border-radius: 12px; }
+
+.card-img-top {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px; }
 
 .card-badge {
   background-color: midnightblue;
@@ -66,21 +75,11 @@ html {
   display: none; }
 
 .rating__label {
-  cursor: pointer;
   padding-right: 0.1em;
   font-size: 2rem; }
 
 .rating__icon--star {
   color: orange; }
-
-.rating__input:checked ~ .rating__label .rating__icon--star {
-  color: #ddd; }
-
-.rating-group:hover .rating__label .rating__icon--star {
-  color: orange; }
-
-.rating__input:hover ~ .rating__label .rating__icon--star {
-  color: #ddd; }
 
 /* ------------------------------------Interactions Styles------------------------------------*/
 .interaction-btn {

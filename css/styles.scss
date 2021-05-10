@@ -22,13 +22,24 @@ html {
 
 /* ------------------------------------Card Styles------------------------------------*/
 
+.card-deck {
+  background-color: #f4f4f4;
+}
+
 .card {
   position: relative;
   padding: 0;
   margin: 8px 0px;
+  margin-bottom: 30px;
   box-shadow: 0 0px 20px 0 transparent,
     0 0px 20px 0 rgba($color: black, $alpha: 0.2);
   border: none;
+  border-radius: 12px;
+}
+
+.card-img-top {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
 }
 
 .card-badge {
@@ -84,7 +95,6 @@ html {
 
 // set icon padding and size
 .rating__label {
-  cursor: pointer;
   padding-right: 0.1em;
   font-size: 2rem;
 }
@@ -92,21 +102,6 @@ html {
 // set default star color
 .rating__icon--star {
   color: orange;
-}
-
-// if any input is checked, make its following siblings grey
-.rating__input:checked ~ .rating__label .rating__icon--star {
-  color: #ddd;
-}
-
-// make all stars orange on rating group hover
-.rating-group:hover .rating__label .rating__icon--star {
-  color: orange;
-}
-
-// make hovered input's following siblings grey on hover
-.rating__input:hover ~ .rating__label .rating__icon--star {
-  color: #ddd;
 }
 
 /* ------------------------------------Interactions Styles------------------------------------*/
